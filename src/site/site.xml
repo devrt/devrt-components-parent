@@ -1,0 +1,47 @@
+<project name="${project.name}">
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.4</version>
+  </skin>
+  <custom>
+    <fluidoSkin>
+      <leftColumnClass>span2 hidden-phone</leftColumnClass>
+      <bodyColumnClass>span10 span12-phone</bodyColumnClass>
+      <topBarEnabled>true</topBarEnabled>
+      <topBarContainerStyle>width: 90%;</topBarContainerStyle>
+      <navBarStyle>navbar-inverse</navBarStyle>
+      <topBarIcon>
+        <name>devRT components</name>
+        <href>http://devrt.tk/components</href>
+      </topBarIcon>
+      <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+      <piwik>
+        <piwikUrl>devrt.tk/piwik</piwikUrl>
+        <idsite>1</idsite>
+      </piwik>
+    </fluidoSkin>
+  </custom>
+  <publishDate position="none"/>
+  <version position="right"/>
+  <body>
+    <head>
+      <style type="text/css">
+        @media (max-width: 767px) {
+          .hidden-phone {
+            display: none !important;
+          }
+          .span12-phone {
+            width: 91.48936170212765% !important;
+            *width: 91.43617021276594% !important;
+          }
+        }
+      </style>
+    </head>
+    <menu ref="reports" inherit="top"/>
+    <breadcrumbs>
+      <item name="devRT" href="../"/>
+      <item name="components" href="./"/>
+    </breadcrumbs>
+  </body>
+</project>
